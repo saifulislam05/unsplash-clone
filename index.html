@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unsplash.com|| image factory</title>
+
+  <!-- icons -->
+  <link rel="stylesheet" href="css/icofont.min.css" />
+
+  <!-----bootstrap----->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
+
+  <!-- ----------jquery plugin css----------- -->
+
+
+
+  <!-- local css -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <div class="pop_up" id="pop_up">
+    <i class="icofont-close btn_close" id="close_btn"></i>
+    <div class="pop_up_box">
+      <div class="pop_up_upper">
+        <div class="owner_profile">
+          <div class="profile_image">
+            <img
+              src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+              alt="">
+          </div>
+          <div class="profile_name name">
+            <p>Saiful islam</p>
+          </div>
+        </div>
+        <div class="likes_wrapper">
+          <i class="icofont-heart like"></i>
+          <i class="icofont-plus add add add"></i>
+          <div class="download_btn">
+            <a>Download free</a>
+            
+            <i class="icofont-simple-down"></i>
+          </div>
+        </div>
+
+      </div>
+      <div class="pop_up_image">
+      
+        <img
+        src="https://images.unsplash.com/photo-1653613603075-74b94b51f129?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      
+      </div>
+
+      <div class="pop_up_down">
+        <div class="views_side">
+
+          <div class="views">
+            <span>Views</span>
+            <p>1,300</p>
+          </div>
+          <div class="download">
+            <span>Download</span>
+            <p>200</p>
+          </div>
+
+          <div class="feautured_in">
+            <span>Featured in</span>
+            <p>Editorial</p>
+          </div>
+
+        </div>
+
+        <div class="share_side">
+
+          <div class="share">
+            <i class="icofont-share share_icon"></i>
+          </div>
+          <div class="info">
+            <i class="icofont-info-circle info_icon"></i>
+          </div>
+          <div class="more">
+            <span>...</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------header starts-------- -->
+
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row nav">
+        <div class="col-1 logo_box">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEUAAAD////V1dWWlpZ0dHTPz89qamrh4eGQkJDk5OTR0dGtra3Y2NgWv+ptAAABL0lEQVR4nO3cMQ7CQAxFwQCBQOD+56Wms2RHxjDvAKs/vbXLqaR1qW+tmbbUPENISJiIMBghIWEiwmCEhISJCIMREhImIgxGSEiYiDAYISFhIsJghISEiQiDERISJiIMRkhImIgwGCEhYSLCYISEhIkIgxESEiYiDPb7wtsBwlvNtCLhdq5vq5lWJPziCOdHOD/C+RHOj3B+hPMjnB/h/AjnRzg/wvkRzo9wfoTzI5wf4fz+QHip6P44YNrjXrKt6KrgeoDwWrStJkJCwv4ICQn7IyQk7I+QkLA/QkLC/ggJCfsjJCTsj5CQsD9CQsL+CAkJ+yMkJOyPkJCwP0JCwv4ICQn7IyQk7G8/QLh3oz56vsq/oH09u1GSJEmSJEmSJEmSJEmSJEmSJEmSJP1rbwwaXQZE0kwUAAAAAElFTkSuQmCC"
+            alt="" />
+        </div>
+        <div class="col-8 col-md-3 col-xl-5 search_box">
+          <i class="icofont-search-1"></i>
+          <input type="text" placeholder="Search free high-resolution photos" />
+          <i class="icofont-focus"></i>
+        </div>
+        <div class="col-6 col-md-5 col-xl-4 d-none d-md-flex explore">
+          <ul class=" ">
+            <li><a href="">Explore</a></li>
+            <li><a href="">Advertise</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+          <div class="line"></div>
+          <div class="log_in_box">
+            <a href="">Log in </a>
+            /
+            <a href="">Sign up</a>
+          </div>
+        </div>
+
+        <button class="col-1 btn d-none d-md-flex">Submit a photo</button>
+
+        <div class="col-1 menu_bar_box">
+          <i class="icofont-navigation-menu"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ----------header ends-------- -->
+
+  <!-----------Category slider starts--------->
+
+  <div class="container-fluid">
+    <div class="category_wrapper">
+      <div class="editorial">
+        <a href="">Editorial</a>
+      </div>
+      <ul class="category_items">
+        <li class="d-sm-none d-block"><a href="">Editorial</a></li>
+        <li>
+          <a href=""><span>featured</span>Digital Nomad</a>
+        </li>
+        <li>
+          <a href="">current Events</a>
+        </li>
+        <li><a href="">Wallpapers</a></li>
+        <li><a href="">3D Renders</a></li>
+        <li><a href="">Textures & Patterns</a></li>
+        <li><a href="">Experimental</a></li>
+        <li><a href="">Architecture</a></li>
+        <li><a href="">Nature</a></li>
+        <li><a href="">Business & Work</a></li>
+        <li><a href="">Fashion</a></li>
+        <li><a href="">Film</a></li>
+        <li><a href="">Food & Drink</a></li>
+        <li><a href="">Health & Wellness</a></li>
+        <li><a href="">People</a></li>
+        <li><a href="">Interiors</a></li>
+        <li><a href="">Street Photo</a></li>
+        <li><a href="">Travel</a></li>
+        <li><a href="">Animals</a></li>
+        <li><a href="">Animals</a></li>
+        <li><a href="">Animals</a></li>
+        <li><a href="">Animals</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-----------Category slider ends--------->
+
+  <!----------------Hero Section starts----------->
+
+  <div class="hero">
+    <div class="container-fluid">
+      <div class="middle_content_wrapper">
+        <div class="middle_content">
+          <h1>Unsplash</h1>
+
+          <p>
+            The internet's source of <a href="">freely-usable images.</a><br />Powered by creators everywhere
+          </p>
+
+          <div class="search_box">
+            <i class="icofont-search-1"></i>
+            <input type="text" placeholder="Search free high-resolution photos" />
+            <i class="icofont-focus"></i>
+          </div>
+          <ul class="trending">
+            <li>Trending:</li>
+            <li><a href="">flower, </a></li>
+            <li><a href="">Wallpapers, </a></li>
+            <li><a href="">backgrounds, </a></li>
+            <li><a href="">happy, </a></li>
+            <li><a href="">love, </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero_bottom">
+        <p class="photo_by">Photo of the Day <span>by</span> Skyler Ewing</p>
+
+        <p class="Read_more">
+          <span>Read more about the </span><a href="">Unsplash License</a>
+        </p>
+        <div class="square_space">
+          <img src="https://images.unsplash.com/file-1606177908946-d1eed1cbe4f5image" alt="" />
+          <p>Start your website with Squarespace today.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------Hero Section Ends----------->
+
+  <!------------------Image gallary  starts------------>
+
+  <div class="image_gallary">
+    <div class="container">
+      <div class="image_boxes_wrapper">
+        <div class="row image_boxes">
+
+
+          <!-- --------first box--------- -->
+          <div class="col-4 single_box" id="single_box">
+
+            <div class="image_item" id="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like "></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653624824808-e1597cf459a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon download_icon "></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653693012126-c7538a683b2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1576211582406-6e756500773bimage?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653731056338-0f67b11b91df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653613603075-74b94b51f129?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653672994990-086a64a40447?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1599321833260-583593901727image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+          <!-- --------first box end--------- -->
+          <!-- --------second box start--------- -->
+
+
+
+          <div class="col-4 single_box">
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653761840898-2e261ee72e9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1629447236132-22c57cd0f0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU0fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-fb-1446410826-71f2fb351f01.jpg?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653629154017-80db78b02610?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1576211582406-6e756500773bimage?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1591258370467-f1ca1d70ea8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfF9oYi1kbDRRLTRVfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653629154311-6ed0256d5782?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1599321833260-583593901727image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <!-- --------second box end--------- -->
+
+          <!-- ---------third box start--------- -->
+          <div class="col-4 single_box">
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653624824808-e1597cf459a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653693012126-c7538a683b2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1576211582406-6e756500773bimage?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653731056338-0f67b11b91df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653613603075-74b94b51f129?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1591151556454-4828e9005394image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="image_item">
+              <img
+                src="https://images.unsplash.com/photo-1653672994990-086a64a40447?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+              <div class="overlay">
+                <div class="overlay_upper">
+                  <i class="icofont-heart like"></i>
+                  <i class="icofont-plus add"></i>
+                </div>
+                <div class="overlay_down">
+                  <div class="owner_profile">
+                    <div class="profile_image">
+                      <img
+                        src="https://images.unsplash.com/profile-1599321833260-583593901727image?dpr=1&auto=format&fit=crop&w=32&h=32&q=60&crop=faces&bg=fff"
+                        alt="">
+                    </div>
+                    <div class="profile_name">
+                      <p>Saiful islam</p>
+                    </div>
+                  </div>
+                  <i class="icofont-swoosh-down download_icon"></i>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <!-- ---------third box End--------- -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-----------------Image gallary  ends--------------->
+
+
+
+
+
+
+
+  <!-- -----bootstrap----- -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
